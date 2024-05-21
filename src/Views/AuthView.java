@@ -31,10 +31,10 @@ public class AuthView {
 		
 		JPanel loginPanel = new JPanel();
 		loginPanel.setLayout(null);
-		loginPanel.setBackground(Color.decode("#FDDFC9"));
+		loginPanel.setBackground(Color.decode("#C3E1F1"));
 		
 		JLabel lblNewLabel = new JLabel("CONTROL ESCOLAR");
-		lblNewLabel.setFont(new Font("Inter", Font.BOLD | Font.ITALIC, 16));
+		lblNewLabel.setFont(new Font("Inter", Font.BOLD, 32));
 		lblNewLabel.setBounds(218, 10, 353, 43);
 		loginPanel.add(lblNewLabel);
 		
@@ -47,12 +47,12 @@ public class AuthView {
 		loginPanel.add(panel2);
 		
 		JLabel lblNewLabel_1 = new JLabel("Inicio de Sesión");
-		lblNewLabel_1.setFont(new Font("Inter", Font.BOLD | Font.ITALIC, 16));
+		lblNewLabel_1.setFont(new Font("Inter", Font.BOLD, 16));
 		lblNewLabel_1.setBounds(17, 20, 135, 20);
 		panel2.add(lblNewLabel_1);
 		
 		JLabel lblNewLabel_2 = new JLabel("Usuario:");
-		lblNewLabel_2.setFont(new Font("Inter", Font.BOLD | Font.ITALIC, 12));
+		lblNewLabel_2.setFont(new Font("Inter", Font.BOLD, 12));
 		lblNewLabel_2.setBounds(17, 56, 62, 13);
 		panel2.add(lblNewLabel_2);
 		
@@ -63,7 +63,7 @@ public class AuthView {
 		textField.setColumns(10);
 		
 		JLabel lblNewLabel_3 = new JLabel("Contraseña:");
-		lblNewLabel_3.setFont(new Font("Inter", Font.BOLD | Font.ITALIC, 12));
+		lblNewLabel_3.setFont(new Font("Inter", Font.BOLD, 12));
 		lblNewLabel_3.setBounds(17, 120, 82, 13);
 		panel2.add(lblNewLabel_3);
 		
@@ -75,52 +75,51 @@ public class AuthView {
 		
 		JButton btnNewButton = new JButton("Acceder");
 		btnNewButton.setForeground(new Color(255, 255, 255));
-		btnNewButton.setFont(new Font("Inter", Font.BOLD | Font.ITALIC, 10));
+		btnNewButton.setFont(new Font("Inter", Font.BOLD, 10));
 		btnNewButton.setBounds(17, 189, 276, 25);
-		btnNewButton.setBackground(Color.decode("#FA3F56"));
+		btnNewButton.setBackground(Color.decode("#4A85A4"));
 		panel2.add(btnNewButton);
 		
 		JCheckBox chckbxNewCheckBox = new JCheckBox();
-		chckbxNewCheckBox.setFont(new Font("Inter", Font.BOLD | Font.ITALIC, 10));
+		chckbxNewCheckBox.setFont(new Font("Inter", Font.BOLD, 10));
 		chckbxNewCheckBox.setText("Recordarme");
 		chckbxNewCheckBox.setBounds(14, 238, 97, 21);
 		chckbxNewCheckBox.setOpaque(false);
 		panel2.add(chckbxNewCheckBox);
 		
-		JButton btnNewButton_1 = new JButton("Olvidaste tu contraseña?");
-		btnNewButton_1.setFont(new Font("Inter", Font.BOLD | Font.ITALIC, 10));
+		JButton btnNewButton_1 = new JButton("¿Olvidaste tu contraseña?");
+		btnNewButton_1.setFont(new Font("Inter", Font.BOLD, 10));
 		btnNewButton_1.setBounds(140, 237, 173, 21);
 		btnNewButton_1.setBorderPainted(false);
 		btnNewButton_1.setContentAreaFilled(false);
 		panel2.add(btnNewButton_1);
 		
 		JPanel panel3 = new JPanel();
-		panel3.setBackground(Color.decode("#FA3F56"));
+		panel3.setBackground(Color.decode("#4A85A4"));
 		panel3.setBounds(392, 63, 310, 292);
 		panel3.setOpaque(true);
 		panel3.setBorder(BorderFactory.createLineBorder(Color.black , 2));
-
 		loginPanel.add(panel3);
 		panel3.setLayout(null);
 		
 		JLabel lblNewLabel_4 = new JLabel("Bienvenido al Inicio de Sesión");
-		lblNewLabel_4.setFont(new Font("Inter", Font.BOLD | Font.ITALIC, 19));
+		lblNewLabel_4.setFont(new Font("Inter", Font.BOLD, 19));
 		lblNewLabel_4.setForeground(new Color(255, 255, 255));
 		lblNewLabel_4.setBounds(10, 100, 300, 31);
 		panel3.add(lblNewLabel_4);
 		
 		JLabel lblNewLabel_5 = new JLabel("No tienes cuenta?");
-		lblNewLabel_5.setFont(new Font("Inter", Font.BOLD | Font.ITALIC, 12));
+		lblNewLabel_5.setFont(new Font("Inter", Font.BOLD, 12));
 		lblNewLabel_5.setForeground(new Color(255, 255, 255));
 		lblNewLabel_5.setBounds(98, 135, 130, 18);
 		panel3.add(lblNewLabel_5);
 		
 		JButton btnNewButton_2 = new JButton("Registrarse");
 		btnNewButton_2.setForeground(new Color(255, 255, 255));
-		btnNewButton_2.setFont(new Font("Inter", Font.BOLD | Font.ITALIC, 12));
+		btnNewButton_2.setFont(new Font("Inter", Font.BOLD, 12));
 		btnNewButton_2.setBounds(98, 168, 110, 23);
 		btnNewButton_2.setBorder(BorderFactory.createLineBorder(Color.white , 2));
-		btnNewButton_2.setBackground(Color.decode("#FA3F56"));
+		btnNewButton_2.setBackground(Color.decode("#4A85A4"));
 		panel3.add(btnNewButton_2);
 		
 		frame.add(loginPanel);
