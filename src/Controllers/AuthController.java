@@ -13,7 +13,12 @@ public class AuthController {
 	
 	public void login() {
     	
-    	vista.login();
+    	vista.loginPanel();
     }
+	
+	public void registro() {
+		
+		vista.registroPanel();;
+	}
 
 }
