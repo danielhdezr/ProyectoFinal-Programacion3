@@ -38,7 +38,8 @@ public class AuthModel {
 		catch (Exception e) {
 			// TODO: handle exception
 			
-			}
+			JOptionPane.showMessageDialog(null, "Conxeion fallida");
+		}
 		return false;
 	}
 	
@@ -55,7 +56,7 @@ public class AuthModel {
 			ps.setString(2, correoElectronico);
 			ps.setString(3, contraseña);
 			ps.executeUpdate();
-			JOptionPane.showMessageDialog(null, "Registro completado");
+			
 		}
 		
 		catch (Exception e) {

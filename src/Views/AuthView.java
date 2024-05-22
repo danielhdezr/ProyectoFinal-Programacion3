@@ -95,8 +95,10 @@ public class AuthView {
 					JOptionPane.showMessageDialog(null, "Ingrese los datos faltantes");
 				} else {
 					if (model.iniciarSesion(textField.getText(), textField2.getText())) {
+						
 						frame.remove(loginPanel);
 						registroPanel();
+						
 					} else {
 						JOptionPane.showMessageDialog(null, "Usuario o contraseña incorrecta");
 					}
@@ -249,6 +251,11 @@ public class AuthView {
 				else 
 				{
 					model.anadirUsuario(textField.getText(), textField2.getText(), textField3.getText());
+			        textField.setText("");
+			        textField2.setText("");
+			        textField3.setText("");
+			        JOptionPane.showMessageDialog(null, "Usuario creado");
+
 				}			
 
 			}
