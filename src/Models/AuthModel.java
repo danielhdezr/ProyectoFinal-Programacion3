@@ -38,8 +38,7 @@ public class AuthModel {
 		catch (Exception e) {
 			// TODO: handle exception
 			
-			JOptionPane.showMessageDialog(null, "Conxeion fallida");
-		}
+			}
 		return false;
 	}
 	
